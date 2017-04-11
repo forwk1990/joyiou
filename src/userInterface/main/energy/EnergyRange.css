@@ -1,0 +1,85 @@
+.energy-detail-span {
+  color: #FDB32B;
+  line-height: 35px; }
+  .energy-detail-span:hover {
+    cursor: pointer; }
+
+.energy-pop-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: transparent; }
+  .energy-pop-wrapper .energy-pop-leave {
+    opacity: 0;
+    animation-duration: 0.5s;
+    -webki-webkit-animation-name: bounceOutDown;
+    animation-name: bounceOutDown; }
+  .energy-pop-wrapper .energy-pop-leave-active {
+    opacity: 0; }
+  .energy-pop-wrapper .energy-pop-appear {
+    opacity: 0; }
+  .energy-pop-wrapper .energy-pop-appear-active {
+    opacity: 1.0;
+    -webkit-animation-duration: .25s;
+    animation-duration: .25s;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight; }
+
+.energy-range {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative; }
+  .energy-range-bar {
+    width: 100%;
+    height: 83px; }
+  .energy-range-content {
+    width: 100%;
+    position: absolute;
+    top: 83px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0 auto; }
+    .energy-range-content-top {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0px 35px;
+      box-sizing: border-box;
+      justify-content: space-between; }
+      .energy-range-content-top-left {
+        float: left; }
+        .energy-range-content-top-left > span {
+          margin-right: 15px; }
+      .energy-range-content-top-right {
+        float: right; }
+    .energy-range-content-table {
+      width: 100%;
+      padding: 0px 35px;
+      box-sizing: border-box;
+      height: calc(100% - 121px); }
+      .energy-range-content-table > div {
+        width: 100% !important;
+        height: 100% !important; }
+        .energy-range-content-table > div .fixedDataTableCellLayout_main {
+          border-width: 0px; }
+        .energy-range-content-table > div .public_fixedDataTable_header, .energy-range-content-table > div .public_fixedDataTable_header .public_fixedDataTableCell_main {
+          background-color: #515f6d !important;
+          background-image: linear-gradient(#515f6d, #515f6d);
+          color: #fff; }
+    .energy-range-content-bottom {
+      width: 100%;
+      height: 61px; }
+      .energy-range-content-bottom-line {
+        width: 100%;
+        height: 1px;
+        margin-top: -1px;
+        background-color: #ccc; }
+
+/*# sourceMappingURL=EnergyRange.css.map */

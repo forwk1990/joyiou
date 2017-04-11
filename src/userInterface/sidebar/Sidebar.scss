@@ -1,0 +1,186 @@
+
+.rotate-unfold {
+  transform: rotate(0deg) !important;
+}
+
+.rotate-fold {
+  transform: rotate(90deg) !important;
+}
+
+.width-unfold {
+  width: 200px !important;
+}
+
+.width-fold {
+  width: 50px !important;
+}
+
+$values: "znxl", "xyhd", "hygl", "smsz", "nlpm", "nlgz", "zjgl";
+@each $value in $values {
+  .#{$value} {
+    background-image: url('../../assets/images/#{$value}.png') !important;
+  }
+  .#{$value}.active {
+    background-image: url('../../assets/images/#{$value}_active.png') !important;
+  }
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(56, 68, 76);
+  transition: 0.35s width ease;
+
+  &-fold {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+
+    & > span.fold-icon {
+      width: 18px;
+      height: 15px;
+      display: inline-block;
+      background: url('../../assets/images/fold.png') center center no-repeat;
+      background-size: 18px 15px;
+      transform: rotate(0deg);
+      transition: 0.35s transform ease;
+    }
+
+  }
+
+  & > .fold {
+    width: 250px;
+  }
+
+  & > .unfold {
+    width: 35px;
+  }
+
+  &-navigation {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.35s width ease;
+
+    &-title {
+      width: 100%;
+      height: 50px;
+      background-color: rgb(81, 95, 109);
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      &-wrapper {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px 0px 0px 14px;
+
+        & > span {
+          line-height: 50px;
+          cursor: pointer;
+        }
+
+        & > span.sidebar-title {
+          float: left;
+          margin-left: 30px;
+        }
+
+        & > span.arrow {
+          width: 22px;
+          height: 22px;
+          float: left;
+          position: relative;
+          top: 14px;
+          display: inline-block;
+          background: url('../../assets/images/triangle.png') center center no-repeat;
+          background-size: 6px 10px;
+          transition: 0.35s transform ease;
+          transform: rotate(0deg);
+        }
+
+        .unfold-arrow {
+          transform: rotate(90deg);
+        }
+
+        .fold-arrow {
+          transform: rotate(0deg);
+        }
+
+      }
+
+    }
+
+    ul {
+      width: 200px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      transition: 0.35s height ease;
+
+      & > li:hover {
+        cursor: pointer;
+      }
+
+      & > li {
+        display: list-item;
+        height: 50px;
+        background-color: rgb(56, 68, 76);
+
+        & > span {
+          line-height: 50px;
+          float: left;
+          cursor: pointer;
+          position: relative;
+        }
+
+        & > span.indicator {
+          width: 3px;
+          height: 100%;
+          line-height: normal;
+          display: inline-block;
+          background-color: transparent;
+        }
+
+        & > span.indicator.active {
+          background-color: rgb(253, 179, 43) !important;
+        }
+
+        & > span.icon.active {
+          background-position: 0px 0px !important;
+        }
+
+        & > span.tran-name.active {
+          color: rgb(253, 179, 43) !important;
+        }
+
+        & > span.icon {
+          width: 22px;
+          height: 22px;
+          margin-left: 10px;
+          background: center center no-repeat;
+          background-size: 22px 22px;
+          top: 14px;
+        }
+
+        & > span.tran-name {
+          margin-left: 30px;
+        }
+
+      }
+    }
+
+    .trans-fold {
+      height: 0px !important;
+    }
+
+  }
+
+}

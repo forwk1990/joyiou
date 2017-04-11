@@ -1,0 +1,62 @@
+.vips {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative; }
+  .vips-bar {
+    width: 100%;
+    height: 83px; }
+  .vips-content {
+    width: 100%;
+    position: absolute;
+    top: 83px;
+    left: 0px;
+    bottom: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0 auto; }
+    .vips-content-top {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0px 35px;
+      box-sizing: border-box;
+      justify-content: space-between; }
+      .vips-content-top-left {
+        float: left; }
+        .vips-content-top-left > span {
+          margin-right: 15px; }
+      .vips-content-top-right {
+        float: right; }
+    .vips-content-table {
+      width: 100%;
+      padding: 0px 35px;
+      box-sizing: border-box;
+      height: calc(100% - 121px); }
+      .vips-content-table > div {
+        width: 100% !important;
+        height: 100% !important; }
+        .vips-content-table > div .fixedDataTableColumnResizerLineLayout_mouseArea {
+          display: none !important; }
+        .vips-content-table > div .public_fixedDataTable_header, .vips-content-table > div .public_fixedDataTable_header .public_fixedDataTableCell_main {
+          background-color: #515f6d !important;
+          background-image: linear-gradient(#515f6d, #515f6d);
+          color: #fff; }
+    .vips-content-bottom {
+      width: 100%;
+      height: 61px; }
+      .vips-content-bottom-line {
+        width: 100%;
+        height: 1px;
+        margin-top: -1px;
+        background-color: #ccc; }
+  .vips-hidden {
+    display: none; }
+    .vips-hidden #filePicker-event-proxy {
+      width: 100px;
+      height: 20px;
+      border: 1px solid #ccc;
+      text-align: center; }
+
+/*# sourceMappingURL=Vips.css.map */

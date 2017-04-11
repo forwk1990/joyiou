@@ -1,0 +1,33 @@
+
+.user-update-form {
+  width: 640px;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 35px;
+
+  .ant-form-explain {
+    display: none;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+    //height: 40px;
+  }
+
+  .user-identity-list {
+    width: 100%;
+
+    &-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 5px 0px;
+
+      & > span {
+        margin: 0px 19px 0px 20px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.edit-appear {
+  opacity: 0.01; }
+
+.edit-appear-active {
+  opacity: 1;
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+.edit-leave {
+  animation-duration: 0.5s;
+  -webki-webkit-animation-name: zoomOut;
+  animation-name: zoomOut; }
+
+.edit-leave-active {
+  opacity: 0.01; }
+
+.overlayDisappearAnimation {
+  opacity: 0; }
+
+.edit-modal {
+  width: 100%;
+  height: 100%;
+  display: block; }
+  .edit-modal-overlay {
+    display: block;
+    background: black;
+    opacity: 0.15;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transition: 0.25s opacity ease; }
+  .edit-modal-wrapper {
+    display: block;
+    background-color: #fff;
+    width: 800px;
+    height: 650px;
+    z-index: 99;
+    margin-left: -400px;
+    left: 50%;
+    top: 72px;
+    position: fixed; }
+    .edit-modal-wrapper-header {
+      width: 100%;
+      height: 55px;
+      padding: 0px 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start; }
+      .edit-modal-wrapper-header > .close {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-top: 15px;
+        color: #97a1a6; }
+        .edit-modal-wrapper-header > .close:hover {
+          cursor: pointer; }
+        .edit-modal-wrapper-header > .close:after {
+          content: '×';
+          font-size: 35px;
+          text-align: center; }
+    .edit-modal-wrapper-content {
+      position: absolute;
+      width: 100%;
+      top: 55px;
+      bottom: 90px;
+      left: 0;
+      overflow: auto;
+      border-bottom: 1px solid rgba(211, 211, 211, 0.35); }
+    .edit-modal-wrapper-bottom {
+      width: 100%;
+      height: 90px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .edit-modal-wrapper-bottom-button {
+        float: right;
+        width: 160px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #fdb32b;
+        color: #fff;
+        border-radius: 20px; }
+        .edit-modal-wrapper-bottom-button:hover {
+          cursor: pointer; }
+
+/*# sourceMappingURL=EditModal.css.map */

@@ -1,0 +1,14 @@
+
+.switch {
+  width: 110px;
+  height: 35px;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & > img:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,143 @@
+/*全局引入awesome字体文件*/
+@import './assets/font-awesome/scss/font-awesome.scss';
+/*自定义动画库*/
+@import "./assets/css/animate.css";
+@import "./assets/css/sweetalert.css";
+@import "./assets/css/fixedDataTable.css";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  .app {
+    width: 100%;
+    height: 100%;
+    //min-width: 1440px;
+
+    .left-title {
+      width: 100px;
+      vertical-align: middle;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .text-overflow {
+      display: block; /*内联对象需加*/
+      word-break: keep-all; /* 不换行 */
+      white-space: nowrap; /* 不换行 */
+      overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    }
+
+    .w-edt {
+      width: 100%;
+    }
+
+    .cnt-wrapper {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      position: relative;
+
+      &-bar {
+        width: 100%;
+        height: 83px;
+      }
+
+      &-cnt {
+        width: 100%;
+        position: absolute;
+        top: 83px;
+        left: 0px;
+        bottom: 0px;
+        overflow: auto;
+        overflow-x: hidden;
+        margin: 0 auto;
+      }
+
+    }
+
+  }
+
+}
+
+.yp-progress {
+  display: inline-block;
+
+  &-line {
+    width: 100%;
+    font-size: 24px;
+    position: relative;
+  }
+
+  &-outer {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+
+    .yp-progress-show-info & {
+      padding-right: 45px;
+      margin-right: -45px;
+    }
+  }
+
+  &-inner {
+    display: inline-block;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 100px;
+    vertical-align: middle;
+  }
+
+  &-bg {
+    border-radius: 100px;
+    background-color: red;
+    transition: all .4s ease 0s;
+    position: relative;
+  }
+
+  &-text {
+    width: 35px;
+    text-align: left;
+    font-size: 1em;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: tahoma;
+    position: relative;
+    top: -1px;
+  }
+
+  &-circle &-inner {
+    position: relative;
+    line-height: 1;
+    background-color: transparent;
+  }
+
+  &-circle &-text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-family: tahoma;
+    margin: 0;
+  }
+}

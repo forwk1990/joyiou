@@ -1,0 +1,239 @@
+
+.train-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 25px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.train-text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ccc;
+    opacity: 0.15;
+    z-index: 9;
+
+    &:hover {
+      cursor: no-drop;
+    }
+  }
+
+}
+
+.train-edit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    //overflow-y: scroll;
+  }
+
+  .ant-form-item {
+    margin-bottom: 15px;
+
+    .ant-form-explain {
+      display: none;
+    }
+
+  }
+
+  &-addImage {
+    width: 240px;
+    margin: 10px auto 15px auto;
+  }
+
+  &-form {
+    width: 100%;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    display: flex;
+
+    &-sel {
+      width: 40px;
+      float: left;
+
+      &-row {
+        width: 40px;
+        height: 47px;
+      }
+    }
+
+    &-cnt {
+      flex: 1;
+
+      .media {
+        height: 32px;
+        display: flex;
+        align-items: center;
+
+        &-picker {
+          width: 400px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          height: 32px;
+          border-radius: 4px;
+          color: #b4b4b4;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          & > span {
+            width: 100%;
+            height: 32px;
+            line-height: 32px;;
+            display: inline-block;
+            text-align: center;
+            margin-top: -2px;
+          }
+
+          &-add {
+
+            &:before {
+              content: '+  ';
+              font-size: 14px;
+            }
+          }
+        }
+
+        &-picker.disabled {
+          background-color: #f7f7f7;
+          color: rgba(0, 0, 0, 0.25);
+
+          &:hover {
+            cursor: no-drop;
+          }
+        }
+
+        &-play {
+          width: 32px;
+          height: 32px;
+          background: url('../../../assets/images/28.png') center center no-repeat;
+          background-size: 30px;
+
+          &-animate {
+            background: url('../../../assets/images/28_animate.gif') center center no-repeat;
+            background-size: 30px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &-play.disabled {
+
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.train-item {
+  width: 360px;
+  height: 200px;
+  border: 1px solid rgb(211, 211, 211);
+  margin: 10px;
+
+  &-header {
+    width: 100%;
+    height: 50px;
+    background: rgb(234, 240, 244);
+    border-bottom: 1px solid rgb(211, 211, 211);
+    display: flex;
+
+    &-title {
+      flex: 1;
+      font-size: 16px;
+      line-height: 50px;
+      padding-left: 15px;
+      color: #333;
+    }
+
+    &-opt {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid rgb(211, 211, 211);
+
+      & > img {
+        width: 22px;
+        height: 22px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+    }
+
+  }
+
+  &-cnt {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .train-info {
+      display: flex;
+      width: 33.3333%;
+      align-items: center;
+      margin: 12px 0px;
+
+      &-flag {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        border-radius: 7px;
+        background: rgb(211, 211, 211);
+
+        &.active {
+          background-color: #FDB32B;
+        }
+      }
+
+      &-text {
+        margin-left: 10px;
+        line-height: 14px;
+        font-size: 12px;
+        color: #333;
+        text-align: left;
+      }
+
+    }
+
+  }
+
+  &-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}

@@ -1,0 +1,157 @@
+.train-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 25px;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+
+.train-text {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .train-text-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ccc;
+    opacity: 0.15;
+    z-index: 9; }
+    .train-text-overlay:hover {
+      cursor: no-drop; }
+
+.train-edit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block; }
+  .train-edit-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; }
+  .train-edit .ant-form-item {
+    margin-bottom: 15px; }
+    .train-edit .ant-form-item .ant-form-explain {
+      display: none; }
+  .train-edit-addImage {
+    width: 240px;
+    margin: 10px auto 15px auto; }
+  .train-edit-form {
+    width: 100%;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    display: flex; }
+    .train-edit-form-sel {
+      width: 40px;
+      float: left; }
+      .train-edit-form-sel-row {
+        width: 40px;
+        height: 47px; }
+    .train-edit-form-cnt {
+      flex: 1; }
+      .train-edit-form-cnt .media {
+        height: 32px;
+        display: flex;
+        align-items: center; }
+        .train-edit-form-cnt .media-picker {
+          width: 400px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          height: 32px;
+          border-radius: 4px;
+          color: #b4b4b4; }
+          .train-edit-form-cnt .media-picker:hover {
+            cursor: pointer; }
+          .train-edit-form-cnt .media-picker > span {
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            display: inline-block;
+            text-align: center;
+            margin-top: -2px; }
+          .train-edit-form-cnt .media-picker-add:before {
+            content: '+  ';
+            font-size: 14px; }
+        .train-edit-form-cnt .media-picker.disabled {
+          background-color: #f7f7f7;
+          color: rgba(0, 0, 0, 0.25); }
+          .train-edit-form-cnt .media-picker.disabled:hover {
+            cursor: no-drop; }
+        .train-edit-form-cnt .media-play {
+          width: 32px;
+          height: 32px;
+          background: url("../../../assets/images/28.png") center center no-repeat;
+          background-size: 30px; }
+          .train-edit-form-cnt .media-play-animate {
+            background: url("../../../assets/images/28_animate.gif") center center no-repeat;
+            background-size: 30px; }
+          .train-edit-form-cnt .media-play:hover {
+            cursor: pointer; }
+
+.train-item {
+  width: 360px;
+  height: 200px;
+  border: 1px solid lightgray;
+  margin: 10px; }
+  .train-item-header {
+    width: 100%;
+    height: 50px;
+    background: #eaf0f4;
+    border-bottom: 1px solid lightgray;
+    display: flex; }
+    .train-item-header-title {
+      flex: 1;
+      font-size: 16px;
+      line-height: 50px;
+      padding-left: 15px;
+      color: #333; }
+    .train-item-header-opt {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid lightgray; }
+      .train-item-header-opt > img {
+        width: 22px;
+        height: 22px; }
+        .train-item-header-opt > img:hover {
+          cursor: pointer; }
+  .train-item-cnt {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center; }
+    .train-item-cnt .train-info {
+      display: flex;
+      width: 33.3333%;
+      align-items: center;
+      margin: 12px 0px; }
+      .train-item-cnt .train-info-flag {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        border-radius: 7px;
+        background: lightgray; }
+        .train-item-cnt .train-info-flag.active {
+          background-color: #FDB32B; }
+      .train-item-cnt .train-info-text {
+        margin-left: 10px;
+        line-height: 14px;
+        font-size: 12px;
+        color: #333;
+        text-align: left; }
+  .train-item-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+
+/*# sourceMappingURL=Trains.css.map */

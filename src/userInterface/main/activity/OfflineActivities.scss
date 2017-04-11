@@ -1,0 +1,229 @@
+
+.offlineActivities {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  /*活动更新组件样式*/
+  &-pop-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: transparent;
+
+    .activity-pop-leave {
+      opacity: 0;
+      animation-duration: 0.5s;
+      -webki-webkit-animation-name: bounceOutDown;
+      animation-name: bounceOutDown;
+    }
+
+    .activity-pop-leave-active {
+      opacity: 0;
+    }
+
+    .activity-pop-appear {
+      opacity: 0;
+    }
+
+    .activity-pop-appear-active {
+      opacity: 1.0;
+      -webkit-animation-duration: .5s;
+      animation-duration: .5s;
+      -webkit-animation-name: bounceInUp;
+      animation-name: bounceInUp;
+    }
+
+  }
+
+  /*顶部工具条样式*/
+  &-bar {
+    width: 100%;
+    height: 83px;
+  }
+
+  /*下方内容区块样式*/
+  &-content {
+    width: 100%;
+    position: absolute;
+    top: 83px;
+    left: 0px;
+    bottom: 0px;
+    overflow: auto;
+  }
+
+  /*活动单元格样式*/
+  .OfflineActivityCell {
+    width: 100%;
+    height: 142px;
+    box-sizing: border-box;
+    padding: 0px 35px 0px 35px;
+
+    &-wrapper {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 15px 0px;
+      border-bottom: 1px solid rgb(211, 211, 211);
+    }
+
+    &-left {
+      width: 60%;
+      height: 100%;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      //align-items: flex-start;
+
+      &-title {
+        width: 100%;
+        font-size: 16px;
+        color: #333;
+        font-family: "PingFang SC";
+
+        & > span:first-child {
+          margin-right: 10px;
+          color: #333;
+        }
+      }
+
+      &-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+        color: #b4b4b4;
+
+        &-image {
+          width: 110px;
+          height: 75px;
+          margin-right: 15px;
+          float: left;
+          background-color: rgb(209, 209, 209);
+
+          & > img {
+            width: 110px;
+            height: 75px;
+          }
+
+        }
+
+        &-info {
+          width: 90%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+
+    }
+
+    &-right {
+      width: 40%;
+      height: 100%;
+      padding: 5px 0px;
+      box-sizing: border-box;
+      font-size: 14px;
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & > div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: #b4b4b4;
+      }
+
+      &-top {
+
+        &-delete {
+          width: 22px;
+          height: 21px;
+
+          & > img {
+            width: 22px;
+            height: 21px;
+            margin-left: 15px;
+          }
+
+          & > img:hover {
+            cursor: pointer;
+          }
+
+        }
+
+        &-date {
+
+        }
+
+        &-switch {
+          width: 110px;
+          height: 35px;
+          margin-left: 38px;
+
+          .ant-switch-checked {
+            background-color: #FDB32B;
+            border-color: #FDB32B;
+          }
+
+        }
+
+      }
+
+      &-middle {
+        padding-right: 22px + 15px;
+
+        & > span:last-child {
+          color: #333;
+          margin-left: 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+        }
+
+      }
+
+      &-bottom {
+        padding-right: 22px + 15px;
+
+        & > span:hover {
+          cursor: pointer;
+        }
+
+        .over {
+          color: #b4b4b4;
+          &:hover {
+            cursor: no-drop;
+          }
+
+        }
+
+        & > span {
+          color: #333;
+        }
+
+        & > span.normal {
+          cursor: pointer;
+        }
+
+        & > span.disabled {
+          cursor: no-drop;
+          color: #b4b4b4;
+        }
+
+      }
+    }
+
+  }
+
+}

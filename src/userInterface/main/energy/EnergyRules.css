@@ -1,0 +1,50 @@
+.energy-value:after {
+  content: ' '; }
+
+.energy-rules {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative; }
+  .energy-rules-bar {
+    width: 100%;
+    height: 83px; }
+  .energy-rules-content {
+    width: 100%;
+    position: absolute;
+    top: 83px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0 auto; }
+    .energy-rules-content-table {
+      width: 100%;
+      padding: 0px 35px;
+      margin-top: 35px;
+      box-sizing: border-box;
+      height: calc(100% - 121px); }
+      .energy-rules-content-table > div {
+        width: 100% !important;
+        height: 100% !important; }
+        .energy-rules-content-table > div .fixedDataTableCellLayout_main {
+          border-width: 0px; }
+        .energy-rules-content-table > div .public_fixedDataTable_header, .energy-rules-content-table > div .public_fixedDataTable_header .public_fixedDataTableCell_main {
+          background-color: #515f6d !important;
+          background-image: linear-gradient(#515f6d, #515f6d);
+          color: #fff;
+          border: 0px; }
+    .energy-rules-content-edit {
+      width: 100%;
+      height: 100%;
+      display: block; }
+      .energy-rules-content-edit-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        .energy-rules-content-edit-wrapper > form {
+          width: 700px;
+          margin: 0 auto; }
+
+/*# sourceMappingURL=EnergyRules.css.map */

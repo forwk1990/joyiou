@@ -1,0 +1,15 @@
+.identities-cell {
+  width: 100%;
+  height: 100%;
+  padding: 0px 105px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center; }
+  .identities-cell-item:after {
+    content: '/'; }
+
+/*# sourceMappingURL=IdentitiesCell.css.map */

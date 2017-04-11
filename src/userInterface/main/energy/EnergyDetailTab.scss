@@ -1,0 +1,41 @@
+
+.energy-detail-tab {
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  height: 100%;
+
+  &-loading, &-nothing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    margin-top: -40px;
+    color: #fdc55e;
+
+    & > span {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  }
+
+  & > div {
+    width: 100% !important;
+    height: 100% !important;
+
+    .fixedDataTableCellLayout_main {
+      border-width: 0px;
+    }
+
+    .public_fixedDataTable_header, .public_fixedDataTable_header .public_fixedDataTableCell_main {
+      background-color: rgb(81, 95, 109) !important;
+      background-image: linear-gradient(rgb(81, 95, 109), rgb(81, 95, 109));
+      color: #fff;
+      //border: 0px;
+    }
+
+  }
+}

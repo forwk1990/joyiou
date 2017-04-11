@@ -1,0 +1,103 @@
+
+.user-list {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+
+  &-bar {
+    width: 100%;
+    height: 83px;
+  }
+
+  &-pop-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: transparent;
+
+    .user-pop-leave {
+      //opacity: 0;
+      animation-duration: 0.5s;
+      -webki-webkit-animation-name: slideOutRight;
+      animation-name: slideOutRight;
+    }
+
+    .user-pop-leave-active {
+      opacity: 0.01;
+    }
+
+    .user-pop-appear {
+      opacity: 0;
+    }
+
+    .user-pop-appear-active {
+      opacity: 1.0;
+      -webkit-animation-duration: .25s;
+      animation-duration: .25s;
+      -webkit-animation-name: slideInRight;
+      animation-name: slideInRight;
+    }
+
+  }
+
+  &-content {
+    width: 100%;
+    position: absolute;
+    top: 83px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0 auto;
+
+    &-table {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 35px 35px 0px 35px;
+      box-sizing: border-box;
+      //overflow-x: scroll;
+
+      & > div {
+        width: 100% !important;
+        //height: 100% !important;
+
+        .fixedDataTableCellLayout_main {
+          border-width: 0px;
+        }
+
+        .public_fixedDataTable_header, .public_fixedDataTable_header .public_fixedDataTableCell_main {
+          background-color: rgb(81, 95, 109) !important;
+          background-image: linear-gradient(rgb(81, 95, 109), rgb(81, 95, 109));
+          color: #fff;
+          border: 0px;
+        }
+
+      }
+    }
+
+    &-edit {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      &-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        & > form {
+          width: 700px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+  }
+
+}

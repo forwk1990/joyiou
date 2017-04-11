@@ -1,0 +1,15 @@
+.energy-detail {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+  .energy-detail .ant-tabs {
+    height: 100%; }
+    .energy-detail .ant-tabs .ant-tabs-bar {
+      height: 100%; }
+    .energy-detail .ant-tabs .ant-tabs-content {
+      height: 100%;
+      padding-left: 0px; }
+      .energy-detail .ant-tabs .ant-tabs-content .ant-tabs-tabpane {
+        height: 100%; }
+
+/*# sourceMappingURL=EnergyDetail.css.map */
